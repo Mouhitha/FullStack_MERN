@@ -1,0 +1,137 @@
+/* Import Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #1b2735, #090a1a);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Welcome Container */
+.welcome-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+/* Header Styling */
+.welcome-header {
+  background: linear-gradient(45deg, #020024, #090979, #00d4ff);
+  background-size: 300% 300%;
+  animation: gradient-animation 5s ease infinite;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-header h1 {
+  font-size: 2.8em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.welcome-header p {
+  font-size: 1.3em;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Gradient Animation */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Features Section */
+.features-section {
+  margin-top: 30px;
+}
+
+.features-section h2 {
+  font-size: 2em;
+  color: #00d4ff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.feature-card h3 {
+  font-size: 1.6em;
+  color: #00d4ff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  font-size: 1em;
+  color: #d4d4d4;
+}
+
+/* Footer Styling */
+.welcome-footer {
+  margin-top: 40px;
+  padding: 30px;
+  background: linear-gradient(to right, #212529, #343a40);
+  border-radius: 10px;
+  color: #ddd;
+  text-align: center;
+}
+
+.welcome-footer p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.get-started-button {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.get-started-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
